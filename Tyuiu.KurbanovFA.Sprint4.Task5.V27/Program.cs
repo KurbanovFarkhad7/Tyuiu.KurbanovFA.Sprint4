@@ -1,6 +1,6 @@
-﻿using Tyuiu.KurbanovFA.Sprint4.Task4.V9.Lib;
+﻿using Tyuiu.KurbanovFA.Sprint4.Task5.V27.Lib;
 
-namespace Tyuiu.KurbanovFA.Sprint4.Task4.V9
+namespace Tyuiu.KurbanovFA.Sprint4.Task5.V27
 {
     internal class Program
     {
@@ -12,15 +12,15 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task4.V9
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Тема: Двумерные массивы (ввод с клавиатуры)                             *");
-            Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #9                                                              *");
+            Console.WriteLine("* Тема: Двумерные массивы (генератор случайных чисел)                     *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант #27                                                             *");
             Console.WriteLine("* Выполнил: Курбанов Фархаджон Азамжанович | РППб-24-1                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
-            Console.WriteLine("* значениями с клавиатуры в диапазоне от 1 до 8. Найдите сумму            *");
-            Console.WriteLine("* четных элементов массива                                                *");
+            Console.WriteLine("* случайными значениями в диапазоне от -5 до 7. Найти                     *");
+            Console.WriteLine("* количество отрицательных элементов.                                     *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
@@ -30,7 +30,7 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task4.V9
             {
                 for (int x = 0; x < array.GetLength(1); x++)
                 {
-                    array[y, x] = randomValue.Next(1, 8);
+                    array[y, x] = randomValue.Next(-5, 7);
                 }
             }
 
@@ -45,7 +45,7 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task4.V9
                 }
                 Console.WriteLine(); //Разделитель столбиков
             }
-            Console.WriteLine("Сумма четных: " + ds.Calculate(array));
+            Console.WriteLine("Кол-во отрицательных: " + ds.Calculate(array));
         }
     }
 }
