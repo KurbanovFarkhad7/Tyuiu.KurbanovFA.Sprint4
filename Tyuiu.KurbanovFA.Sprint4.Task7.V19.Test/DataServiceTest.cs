@@ -9,16 +9,9 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task7.V19.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int[,] array = new int[,]
-            {
-                {-1,2,3,4,5 },
-                {6,-7,8,9,10 },
-                {11,12,-13,14,15 },
-                {16,17,18,-19,20 },
-                {21,22,23,24,-25 },
-            };
-            int res = ds.Calculate(array);
-            int wait = 5;
+            string input = "90817264";
+            int res = ds.Calculate(4,2, input);
+            int wait = 3;
             Assert.AreEqual(wait, res);
         }
     }
