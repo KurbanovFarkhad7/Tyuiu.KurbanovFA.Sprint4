@@ -6,7 +6,7 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task2.V16.Lib
     {
         public int Calculate(int[] array)
         {
-            int result = 1;
+            int result = 0;
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -14,7 +14,7 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task2.V16.Lib
                 {
                     continue;
                 }
-                else { result *= array[i]; }
+                else { result += array[i]; }
             }
             return result;
         }
