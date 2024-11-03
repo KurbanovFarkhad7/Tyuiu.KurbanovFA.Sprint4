@@ -6,7 +6,7 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task6.V20.Lib
     {
         public string[] Calculate(string[] array)
         {
-            string[] result = new string[array.Length];
+            string[] result = { };
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i].Length < 10)
