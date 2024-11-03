@@ -1,6 +1,6 @@
-﻿using Tyuiu.KurbanovFA.Sprint4.Task0.V19.Lib;
+﻿using Tyuiu.KurbanovFA.Sprint4.Task1.V17.Lib;
 
-namespace Tyuiu.KurbanovFA.Sprint4.Task0.V19
+namespace Tyuiu.KurbanovFA.Sprint4.Task1.V17
 {
     internal class Program
     {
@@ -12,15 +12,15 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task0.V19
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Тема: Одномерные массивы (статический ввод)                             *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #19                                                             *");
+            Console.WriteLine("* Тема: Одномерные массивы (ввод с клавиатуры)                            *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #17                                                             *");
             Console.WriteLine("* Выполнил: Курбанов Фархаджон Азамжанович | РППб-24-1                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан одномерный целочисленный массив на 10 элементов заполненный         *");
-            Console.WriteLine("* статическими значениями в диапазоне от 0 до 9 подсчитать произведение   *");
-            Console.WriteLine("* нечетных элементов массива.  {9, 5, 7, 4, 5, 3, 7, 8, 9, 1}             *");
+            Console.WriteLine("* Дан одномерный целочисленный массив на 14 элементов заполненный         *");
+            Console.WriteLine("* значениями с клавиатуры в диапазоне от 1 до 7 подсчитать сумму четных   *");
+            Console.WriteLine("* элементов массива. С клавиатуры: 1,7,6,3,2,5,7,6,7,6,5,4,7,6            *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
@@ -34,7 +34,7 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task0.V19
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.GetMultOddArrEl(array));
+            Console.WriteLine(ds.Calculate(array));
         }
     }
 }
