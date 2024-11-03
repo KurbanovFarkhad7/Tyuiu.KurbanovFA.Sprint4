@@ -32,7 +32,7 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task6.V20
             Console.WriteLine("***************************************************************************");
 
             string[] result = ds.Calculate(array);
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < result.Length; i++)
             {
                 Console.WriteLine(result[i]);
             }
