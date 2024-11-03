@@ -13,13 +13,10 @@ namespace Tyuiu.KurbanovFA.Sprint4.Task6.V20.Lib
                 if (array[i].Length < 10)
                 {
                     result[i] = array[i];
-                    nullCount++;
+                    /*nullCount++;*/ //если нужно будет создать массив с четким кол-вом нужных ячеек
                 }
             }
-            string[] res = new string[nullCount];
-            res = result.Where(word => word != null).ToArray();
-            return res;
-            /*result.Where(c => c != null).ToArray();*/
+            return result.Where(word => word != null).ToArray();
         }
     }
 }
